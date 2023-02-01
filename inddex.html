@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="color-2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- ===== Style Switcher ===== -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="style-switcher.css">
 </head>
 <body>
     <!--===== main container start ===== -->
@@ -16,24 +23,24 @@
         <!-- ===== asidestart ===== -->
         <div class="aside">
             <div class="logo">
-                <a href="#"><span>A</span>tlas</a>
+                <a href="#"><span>s</span>now</a>
             </div>
             <div class="nav-toggler">
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i> Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i> Porfile</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="#profile"><i class="fa fa-briefcase"></i> Porfile</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
             </ul>
         </div>
          <!-- ===== Aside End ===== -->
          <!--===== main container start ===== -->
          <div class="main-content">
             <!--===== Home section start ===== -->
-            <section class="home section">
+            <section class="home section" id="home">
               <div class="container">
                 <div class="row">
                     <div class="home-info padd-15">
@@ -50,7 +57,7 @@
             </section>
             <!--===== Home section End ===== -->
             <!--===== About section start ===== -->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -62,7 +69,7 @@
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <h3>I'm Nabil Touil and <span>web Developer</span></h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eos optio culpa quam magni quidem iste officiis aliquam. Incidunt culpa odio nostrum tempore expedita veniam aperiam sit consequuntur. Quos dolore, sit explicabo error minus nesciunt itaque assumenda amet sint, eligendi porro autem fuga voluptas! Corrupti eos repudiandae eveniet enim, similique eaque cum magnam nam non!</p>
+                                    <p>the pain itself should be followed by the adipiscing of the developer. They love the option of guilt, but this is a great service. Incidents of guilt, our hatred, are the result of our timely opening of forgiveness. To those whom I will explain with pain, they do not know the mistake, so they are to be accepted, but to choose the pleasure of flight! For it will happen that they will be rejected by the corrupt, and likewise those who are not great!</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -138,7 +145,7 @@
             </section>
              <!--===== About section End ===== -->
              <!--===== Services Section start ===== -->
-             <section class="service section">
+             <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
                        <div class="section-title padd-15">
@@ -228,7 +235,7 @@
              </section>
              <!--===== Services Section End ===== -->
              <!--===== Profile Section Start ===== -->
-             <section class="profile section">
+             <section class="profile section" id="profile">
                 <div class="container">
                     <div class="row">
                        <div  class="section-title padd-15">
@@ -300,7 +307,7 @@
              </section>
              <!--===== Profile Section End ===== -->
              <!--===== Contact Section Start ===== -->
-             <section class="contact section">
+             <section class="contact section" id="contact">
                <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -384,21 +391,30 @@
              <!--===== contact Section End ===== -->
          </div>
           <!--===== main content End ===== -->
+          <!--===== Style Switcher start ===== -->
+          <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas "></i>
+            </div>
+            <h4> Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+          </div>
+         <!--===== Style Switcher End ===== -->
     </div>
     <!--===== main container End ===== -->
-    <!--===== Style Switcher start ===== -->
-    
-       
-          
-      
-        
-           
-
-       
-    
-    <!--===== Style Switcher End ===== -->
     <!--===== JS Files ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
    

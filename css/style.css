@@ -7,6 +7,14 @@
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
 }
+body.dark
+{
+    --bg-blak-900:#151515;
+    --bg-blak-100:#222222;
+    --bg-blak-50:#393939;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
 body
 {
     line-height: 1.5;
@@ -666,6 +674,7 @@ h3.my-profession
 }
 @media ( max-width:767px)
 {
+    .contact .contact-from .col-6,
     .contact .contact-info-item,
     .profile .profile-item,
     .service .service-item,
